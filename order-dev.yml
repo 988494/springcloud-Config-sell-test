@@ -15,9 +15,6 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: order:10002
-  client:
-    service-url:
-      defaultZone: http://weifuwukt.com:9000/eureka
 
 info:
   app.name: order
