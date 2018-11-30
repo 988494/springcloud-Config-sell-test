@@ -2,7 +2,6 @@ env: dev1
 server:
   port: 10002
 spring: 
-    name: order
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/sell?useSSL=false
