@@ -1,0 +1,18 @@
+server:
+  port: 10001
+spring:
+  application:
+    name: product
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sell?useSSL=false
+    username: root
+    password: admin
+  main:
+    allow-bean-definition-overriding: true
+
+info:
+  app.name: product
+  company.name: www.weifuwukt.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
