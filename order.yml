@@ -1,25 +1,25 @@
-server:
-  port: 10002
-spring:
-  application:
-    name: order
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/sell?useSSL=false
-    username: root
-    password: admin
-  main:
-    allow-bean-definition-overriding: true
-eureka:
-  instance:
-    prefer-ip-address: true
-    instance-id: order:10002
-  client:
-    service-url:
-      defaultZone: http://weifuwukt.com:9000/eureka
+# server:
+#   port: 10002
+# spring:
+#   application:
+#     name: order
+#   datasource:
+#     driver-class-name: com.mysql.jdbc.Driver
+#     url: jdbc:mysql://localhost:3306/sell?useSSL=false
+#     username: root
+#     password: admin
+#   main:
+#     allow-bean-definition-overriding: true
+# eureka:
+#   instance:
+#     prefer-ip-address: true
+#     instance-id: order:10002
+#   client:
+#     service-url:
+#       defaultZone: http://weifuwukt.com:9000/eureka
 
-info:
-  app.name: order
-  company.name: www.weifuwukt.com
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
+# info:
+#   app.name: order
+#   company.name: www.weifuwukt.com
+#   build.artifactId: $project.artifactId$
+#   build.version: $project.version$
