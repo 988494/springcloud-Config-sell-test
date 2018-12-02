@@ -15,7 +15,10 @@ spring:
     port: 5672
     username: guest
     password: guest
-
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${server.port}
+    prefer-ip-address: true
 info:
   app.name: product
   company.name: www.weifuwukt.com
