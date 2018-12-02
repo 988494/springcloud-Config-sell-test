@@ -1,19 +1,33 @@
-env: dev1
 server:
   port: 10002
 spring: 
+  application:
+    name: order
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/sell?useSSL=false
     username: root
     password: admin
+  cloud:
+    stream:
+      bindings:
+        myMessage:
+          group: order
+          content-type: application/json
+  redis:
+    host: 120.79.93.16
+    port: 9002
+  rabbitmq:
+    host: 192.168.99.100
+    port: 5672
+    username: guest
+    password: guest
   main:
     allow-bean-definition-overriding: true
 eureka:
   instance:
+    instance-id: ${spring.application.name}:${server.port}
     prefer-ip-address: true
-    instance-id: order:10002
-
 info:
   app.name: order
   company.name: www.weifuwukt.com
