@@ -5,5 +5,5 @@ spring:
     name: api-gateay
 eureka:
   instance:
-    instance-id: api-gateay:${server.port}
+    instance-id: ${spring.application.name}:${server.port}
     prefer-ip-address: true
